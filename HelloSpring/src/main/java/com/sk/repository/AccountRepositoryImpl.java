@@ -1,5 +1,8 @@
 package com.sk.repository;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class AccountRepositoryImpl implements AccountRepository {
 
 	@Override

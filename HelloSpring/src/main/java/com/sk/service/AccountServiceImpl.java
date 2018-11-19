@@ -1,14 +1,24 @@
 package com.sk.service;
 
+import javax.annotation.PreDestroy;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.sk.repository.AccountRepository;
 
+@Component
 public class AccountServiceImpl implements AccountService {
-	AccountRepository repository;
+	@Autowired
+	private AccountRepository repository;
 	
+	public void init() {
+		System.out.println("init....");
+	}
 	public AccountServiceImpl() {
 		super();
 	}
-
+    //@Autowired
 	public AccountServiceImpl(AccountRepository repository) {
     	this.repository = repository;
 	}
@@ -26,5 +36,8 @@ public class AccountServiceImpl implements AccountService {
 		// TODO Auto-generated method stub
 		this.repository = repo;
 	}
-
+    @PreDestroy
+    public void destroy() {
+    	System.out.println("serviceimpl cleanup ....");
+    }
 }
