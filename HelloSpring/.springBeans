@@ -11,6 +11,7 @@
 		<config>src/main/resources/account-conf.xml</config>
 		<config>src/main/resources/annotation-conf.xml</config>
 		<config>src/main/resources/aop-conf.xml</config>
+		<config>src/main/resources/jdbc-conf.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

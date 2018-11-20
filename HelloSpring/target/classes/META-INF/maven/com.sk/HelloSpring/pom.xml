@@ -10,6 +10,13 @@
         <artifactId>spring-context</artifactId>
         <version>4.3.20.RELEASE</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>4.3.20.RELEASE</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
     <dependency>
         <groupId>org.aspectj</groupId>
@@ -22,7 +29,14 @@
         <artifactId>aspectjrt</artifactId>
         <version>1.8.13</version>
     </dependency>
-  
+    <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+    <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <version>1.4.197</version>
+<!--         <scope>test</scope> scope 의미를 확인해야 함-->
+    </dependency>
+      
   </dependencies>
   <build>
   	<plugins>
